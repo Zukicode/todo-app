@@ -1,0 +1,42 @@
+@import 'styles/colors.scss';
+
+.mobileClear {
+  padding: 15px 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+
+  @media (max-width: 550px) {
+    display: flex;
+  }
+
+  .countTaskMobile {
+    p {
+      color: $dark-blue-gray;
+      font-size: 13px;
+      transition: all 0.4s;
+      -webkit-transition: all 0.4s;
+      -moz-transition: all 0.4s;
+      -ms-transition: all 0.4s;
+      -o-transition: all 0.4s;
+    }
+  }
+
+  .clearTaskMobile {
+    p {
+      color: $dark-blue-gray;
+      cursor: pointer;
+      font-size: 13px;
+
+      &:hover {
+        transition: all 0.4s;
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        -ms-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        color: $dark-gray-hover;
+      }
+    }
+  }
+}

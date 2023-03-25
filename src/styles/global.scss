@@ -1,0 +1,21 @@
+@use './normalize.scss';
+@import './colors.scss';
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+div,
+span,
+input,
+button {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/*Scroll*/
+/*Scroll*/

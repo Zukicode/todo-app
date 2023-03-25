@@ -1,0 +1,38 @@
+@import 'styles/colors.scss';
+
+.EmptyTodo {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+
+  &.dark {
+    div {
+      text-align: center;
+
+      h1 {
+        color: $dark-light-gray;
+      }
+
+      p {
+        color: $dark-blue-gray;
+      }
+    }
+  }
+
+  &.light {
+    div {
+      text-align: center;
+
+      h1 {
+        color: $light-dark-blue;
+      }
+
+      p {
+        color: $dark-blue-gray;
+      }
+    }
+  }
+}

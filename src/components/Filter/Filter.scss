@@ -1,0 +1,117 @@
+@import 'styles/colors.scss';
+
+.filter {
+  padding: 15px 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+
+  &.dark {
+    background-color: $dark-blue;
+  }
+
+  @media (max-width: 550px) {
+    justify-content: center;
+  }
+
+  .countTask {
+    p {
+      color: $dark-blue-gray;
+      font-size: 13px;
+      transition: all 0.4s;
+      -webkit-transition: all 0.4s;
+      -moz-transition: all 0.4s;
+      -ms-transition: all 0.4s;
+      -o-transition: all 0.4s;
+    }
+
+    @media (max-width: 550px) {
+      display: none;
+    }
+  }
+
+  .filterChange {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: $dark-blue-gray;
+      font-weight: 700;
+      font-size: 14px;
+      transition: all 0.4s;
+      -webkit-transition: all 0.4s;
+      -moz-transition: all 0.4s;
+      -ms-transition: all 0.4s;
+      -o-transition: all 0.4s;
+
+      &:hover {
+        transition: all 0.4s;
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        -ms-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        color: $dark-gray-hover;
+      }
+
+      &.active {
+        color: $blue;
+      }
+    }
+  }
+
+  .clearTask {
+    p {
+      color: $dark-blue-gray;
+      cursor: pointer;
+      font-size: 13px;
+      transition: all 0.4s;
+      -webkit-transition: all 0.4s;
+      -moz-transition: all 0.4s;
+      -ms-transition: all 0.4s;
+      -o-transition: all 0.4s;
+
+      &:hover {
+        transition: all 0.4s;
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        -ms-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        color: $dark-gray-hover;
+      }
+    }
+
+    @media (max-width: 550px) {
+      display: none;
+    }
+  }
+}
+
+.mobileShow {
+  display: block;
+
+  @media (max-width: 550px) {
+    display: none;
+  }
+}
+
+.mobileHide {
+  display: none;
+
+  @media (max-width: 550px) {
+    display: block;
+  }
+}

@@ -1,0 +1,34 @@
+@import 'styles/colors.scss';
+
+.Todo {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 1;
+  margin-top: 145px;
+
+  @media (max-width: 768px) {
+    margin-top: 150px;
+  }
+
+  &.dark {
+    .createdBy {
+      color: $dark-light-gray;
+
+      a {
+        color: $blue;
+      }
+    }
+  }
+
+  &.light {
+    .createdBy {
+      color: $light-dark-blue;
+
+      a {
+        color: $blue;
+      }
+    }
+  }
+}
